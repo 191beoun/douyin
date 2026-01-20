@@ -225,11 +225,11 @@
                 <span id="minReqText">最低起算：3,000 顆</span>
                 <span id="rateText">比值：470 TWD / 1k</span>
             </div>
-            <div class="hint error-msg" id="errorMsg">💎低於最低起充門檻</div>
+            <div class="hint error-msg" id="errorMsg">💎低於起充門檻</div>
         </div>
 
         <div class="result-area">
-            <div class="result-label">預估台幣金額</div>
+            <div class="result-label">預估金額</div>
             <div class="price-display">
                 <span id="priceOutput">0</span> <span class="unit">TWD</span>
             </div>
@@ -266,11 +266,11 @@
             buttons.forEach(btn => btn.classList.remove('active'));
             if (mode === 'promo') {
                 buttons[0].classList.add('active');
-                minReqText.innerText = `最低起算：${promoMin.toLocaleString()} 顆`;
+                minReqText.innerText = `最低起充：${promoMin.toLocaleString()} 顆`;
                 rateText.innerText = `比值：470 TWD / 1k`;
             } else {
                 buttons[1].classList.add('active');
-                minReqText.innerText = `最低起算：${normalMin.toLocaleString()} 顆`;
+                minReqText.innerText = `最低起充：${normalMin.toLocaleString()} 顆`;
                 rateText.innerText = `比值：480 TWD / 1k`;
             }
 
