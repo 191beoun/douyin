@@ -219,10 +219,10 @@
         </div>
 
         <div class="input-group">
-            <label class="input-label">輸入鑽石數量 (顆)</label>
+            <label class="input-label">輸入💎數量</label>
             <input type="number" id="diamondInput" placeholder="請輸入數量" step="1000" oninput="calculate()">
             <div class="hint">
-                <span id="minReqText">最低起算：3,000 顆</span>
+                <span id="minReqText">最低起算：💎3,000</span>
                 <span id="rateText">比值：470 TWD / 1k</span>
             </div>
             <div class="hint error-msg" id="errorMsg">💎低於起充門檻</div>
@@ -265,11 +265,11 @@
             buttons.forEach(btn => btn.classList.remove('active'));
             if (mode === 'promo') {
                 buttons[0].classList.add('active');
-                minReqText.innerText = `最低起算：${promoMin.toLocaleString()} 顆`;
+                minReqText.innerText = `最低起算：${promoMin.toLocaleString()} `;
                 rateText.innerText = `比值：470 TWD / 1k`;
             } else {
                 buttons[1].classList.add('active');
-                minReqText.innerText = `最低起算：${normalMin.toLocaleString()} 顆`;
+                minReqText.innerText = `最低起算：${normalMin.toLocaleString()} `;
                 rateText.innerText = `比值：480 TWD / 1k`;
             }
 
